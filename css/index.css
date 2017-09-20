@@ -1,0 +1,76 @@
+html,body{background: url(../img/bg.jpg) no-repeat;background-size: cover;background-attachment: fixed;}
+
+body{padding: 1.04rem 0 1.1rem 0;}
+
+@font-face {
+  font-family: 'iconfont';
+  src: url('../css/font/iconfont.eot');
+  src: url('../css/font/iconfont.eot?#iefix') format('embedded-opentype'),
+  url('../css/font/iconfont.woff') format('woff'),
+  url('../css/font/iconfont.ttf') format('truetype'),
+  url('../css/font/iconfont.svg#iconfont') format('svg');
+}
+.iconfont{
+  font-family:"iconfont" !important;
+  font-size:16px;font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.header{width:100%;height: 1.04rem;background: url(../img/bg.jpg) no-repeat;background-size: cover;position: fixed;top:0;}
+.nav{display: flex;justify-content: space-between;}
+.nav span{width: 0.84rem;font-size: 0.5rem;line-height: 1.04rem;text-align: center;color: #fff;}
+.nav ul{width: 4.72rem;display: flex;}
+.nav ul li{flex-basis: 25%;font-size: 0.34rem;color: #787d8a;line-height: 1.04rem;text-align: center;}
+.nav ul .bingo{color: #fff;}
+
+.banner{height:3.13rem;background: url(../img/banner1.jpg);background-size: cover;}
+
+.tab{height: 2.92rem;padding: 0.18rem 0 0.24rem 0;background: rgba(255,255,255,.2);}
+.tab ul{width: 100%;height:100%;display: flex;flex-wrap: wrap;}
+.tab ul li{width: 20%;height: 50%;font-size: 0.24rem;text-align: center;display: flex;flex-direction: column;align-items: center;justify-content: space-around;} 
+.tab ul li a{width: 0.8rem;height: 0.8rem;border-radius: 50%;color: #fff;font-size: 0.46rem;line-height: 0.8rem;text-align: center;}
+.tab ul li:nth-of-type(1) a,.tab ul li:nth-of-type(8) a{background: linear-gradient(-120deg,#fe9c69,#f64581);}
+.tab ul li:nth-of-type(2) a{background: linear-gradient(-120deg,#fba55c,#fd7a35);}
+.tab ul li:nth-of-type(3) a,.tab ul li:nth-of-type(10) a{background: linear-gradient(-120deg,#fccf6e,#fdae5a);}
+.tab ul li:nth-of-type(4) a,.tab ul li:nth-of-type(7) a{background: linear-gradient(-120deg,#61dfbc,#76cc5f);}
+.tab ul li:nth-of-type(5) a{background: linear-gradient(-120deg,#a06bd2,#7c5ec7);}
+.tab ul li:nth-of-type(6) a,.tab ul li:nth-of-type(9) a{background: linear-gradient(-120deg,#a76fec,#447cd4);}
+.tab ul li span{color:#abb4c4;} 
+
+.songCom{margin-top: 0.1rem;background: rgba(255,255,255,.2);}
+.songCom p{height: 0.8rem;line-height: 0.8rem;color:#fff;padding: 0 0.2rem;}
+.songCom p span{float: left;font-size: 0.34rem;}
+.songCom p i{float: right;font-size: 0.26rem;}
+
+.choose{width: 100%;display: flex;flex-wrap: wrap;justify-content: space-between;}
+.choose figure{width: 32.5%;height: 3.4rem;}
+.choose figure img{width: 100%;}
+.choose figure figcaption{font-size: 0.24rem;color: #fff;}
+.choose figure .crile{border-radius: 50%;}
+
+.footer{width: 92%; height: 0.84rem;background: rgba(0,0,0,.85);position: fixed;bottom:0;padding: 0.13rem 4%;}
+.songName{width: 4.2rem;height: 0.82rem;float: left;}
+.songName img{width: 0.82rem;height: 0.82rem;border-radius: 50%;float: left;}
+.songName p{width:3.18rem;float: right;color: #fff;}
+.songName p span{display: block;width: 3.18rem;height:0.42rem;line-height:0.42rem;font-size: 0.28rem;overflow: hidden;}
+.songName p em{font-size: 0.22rem;color:#8f8f96;}
+.songBtn{width: 2.36rem;height: 0.82rem;line-height: 0.92rem;float: right;}
+.songBtn span{color: #ffcd2d;font-size: 0.45rem;}
+.songBtn .nextSong{margin: 0 0.4rem;}
+
+.mask{width:100%;height: 100%;background: rgba(0,0,0,.3);position: fixed;top:0;left: 0;z-index: 2;display: none;}
+.menu{width: 100%;height: 6rem;background: rgba(27,29,28,.9);position: fixed;bottom:-6rem;left: 0;z-index: 3;color:#fff;display: flex;flex-direction: column;}
+.menu header{height: 0.91rem;line-height: 0.91rem;padding: 0 0.2rem;border-bottom: 1px solid #292b34;font-size: 0.3rem;}
+.menu header h3{float: left;font-weight: 100;}
+.menu header i{float: right;color: #94969b;font-size: 0.48rem;margin-right: 0.45rem;}
+.menu header span{float: right;color: #94969b;}
+
+.menu ul{padding-left: 0.2rem;flex: 1;overflow-y: auto;}
+.menu ul li{height: 0.78rem;line-height: 0.78rem;color: #94969b;border-bottom: 1px solid #292b34;font-size: 0.3rem;}
+.menu ul li span{width: 5.84rem;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;float: left;}
+.menu ul li i{float: right;margin-right: 0.22rem;}
+.menu ul .songPlay span{color: #ffcd2d;}
+
+.menu footer{height: 0.93rem;line-height: 0.93rem;text-align: center;font-size: 0.3rem;border-top: 1px solid #292b34;}

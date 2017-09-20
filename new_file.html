@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<audio src="audio/薛之谦-演员.mp3"></audio>
+		<input type="button" name="" id="stop" value="暂停" />
+		<input type="button" name="" id="start" value="播放" />
+	</body>
+	<script type="text/javascript">
+		var oAudio = document.getElementsByTagName('audio')[0];
+		//audio.play() 播放
+		//audio.pause() 暂停
+		var timer;
+		var oStop = document.getElementById('stop');
+		var oStart = document.getElementById('start');
+		
+		oStart.onclick = function(){
+			clearInterval(timer);
+			oAudio.play();
+			timer = setInterval(function(){
+				console.log(oAudio.currentTime);//播放进度
+			},1000)
+		}
+		oStop.onclick = function(){
+			clearInterval(timer);
+			oAudio.pause();
+			setInterval(function(){
+				console.log(oAudio.currentTime);//播放进度
+			},1000)
+		}
+		
+		/*setInterval(function(){
+			console.log(oAudio.duration);//播放时间
+			console.log(oAudio.currentTime);//播放进度
+		},1000)*/
+		
+		
+/*		function b(callback){
+			console.log(1);
+			callback.call(this);
+		}
+		
+		function a(){
+			console.log(2);
+		}
+		
+		b(a);*/
+		
+	</script>
+</html>
